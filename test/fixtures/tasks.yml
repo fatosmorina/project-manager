@@ -3,7 +3,9 @@
 one:
   title: MyString
   done: false
+  project: one
 
 two:
   title: MyString
   done: false
+  project: two

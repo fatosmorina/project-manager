@@ -21,6 +21,11 @@
     <%= form.check_box :done, id: :task_done %>
   </div>
 
+  <div class="field">
+    <%= form.label :project_id %>
+    <%= form.text_field :project_id, id: :task_project_id %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
