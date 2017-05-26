@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
+<h1>
+  <%= check_box_tag :task_done, @task.done %>
   <%= @task.title %>
-</p>
+</h1>
 
 <p>
   <strong>Done:</strong>
