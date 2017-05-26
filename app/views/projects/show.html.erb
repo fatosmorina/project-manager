@@ -13,7 +13,7 @@
 <ul>
 <% @project.tasks.each do |task| %>
  <li>
-   <%= check_box_tag "task_done#{task.id}, "", @task.done  %>  
+ <%= check_box_tag "task_done#{task.id}", "", @task.done  %> %>  
    <%= task.title %>
  </li>
 <% end %> 
