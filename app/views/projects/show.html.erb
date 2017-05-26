@@ -10,5 +10,9 @@
   <%= @project.ends_at %>
 </p>
 
+<% @project.tasks.each do |task| %>
+  <li><%= task.title %></li>
+<% end %> 
+
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
