@@ -30,5 +30,7 @@
 </ol>
 
 <%= form_for([ @task, @task.comments.build]) do |f| %>
+
+  <%= f.text_field :name %>
   
 <% end %>
