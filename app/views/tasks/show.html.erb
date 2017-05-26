@@ -17,3 +17,14 @@
 
 <%= link_to 'Edit', edit_task_path(@task) %> |
 <%= link_to 'Back', tasks_path %>
+
+<h2>Comments</h2>
+
+<ol>
+  <% @task.comments.each do |comment| %>
+    <li>
+      <h3><%= comment.name %></h3>
+      <blockquote><%= comment.body %></blockquote>
+    </li>
+  <% end %>
+</ol>
