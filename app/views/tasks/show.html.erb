@@ -26,15 +26,17 @@
       <h3><%= comment.name %></h3>
       <blockquote><%= comment.body %></blockquote>
     </li>
-  <% end %>
+  <% end %>  
 </ol>
 
 <%= form_for([ @task, @task.comments.build]) do |f| %>
- <p>
+<p>
   <%= f.text_field :name, placeholder: "Name" %>
- </p>
- <p>
+</p>
+<p>
   <%= f.email_field :email, placeholder: "Email" %>
- </p>
-
+</p>
+<p>
+  <%= f.text_area :body %>
+</p>
 <% end %>
