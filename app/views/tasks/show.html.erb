@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>
-  <%= check_box_tag :task_done, @task.done %>
+  <%= check_box_tag :task_done, "", @task.done %>
   <%= @task.title %>
 </h1>
 
@@ -12,7 +12,7 @@
 
 <p>
   <strong>Project:</strong>
-  <%= @task.project %>
+  <%= @task.project.name %>
 </p>
 
 <%= link_to 'Edit', edit_task_path(@task) %> |
