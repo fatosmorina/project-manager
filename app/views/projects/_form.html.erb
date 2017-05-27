@@ -16,6 +16,13 @@
     <%= form.text_field :name, id: :project_name %>
   </div>
 
+  
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :project_description %>
+  </div>
+
+
   <div class="field">
     <%= form.label :ends_at %>
     <%= form.date_select :ends_at, id: :project_ends_at %>
