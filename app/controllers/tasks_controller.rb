@@ -22,6 +22,8 @@ class TasksController < ApplicationController
   end
 
   def toggle
+    @task.toggle(:done).save
+    head 204
   end
 
   # POST /tasks
